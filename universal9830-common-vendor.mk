@@ -179,6 +179,8 @@ PRODUCT_PACKAGES += \
     libqfp_sensortest \
     libril-samsung \
     libsait_npu_compiler \
+    libsec-ril-dsds \
+    libsec-ril \
     libsec_semRil \
     libsemnativecarrierfeature \
     libsensorlistener \
