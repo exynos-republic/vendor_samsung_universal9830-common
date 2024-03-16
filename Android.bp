@@ -151,6 +151,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libsemnativecarrierfeature",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsemnativecarrierfeature.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsemnativecarrierfeature.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libprofileparamstorage",
 	owner: "samsung",
 	strip: {
@@ -334,6 +354,40 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libSEF.quram.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libSemDataProps",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libSemDataProps.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libSemTelephonyProps",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libSemTelephonyProps.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -1210,14 +1264,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libril-samsung",
+	name: "libril_sem",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libril-samsung.so"],
+			srcs: ["proprietary/vendor/lib64/libril_sem.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -1235,23 +1289,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsait_npu_compiler.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsec-ril-dsds",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsec-ril-dsds.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -1295,23 +1332,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsemnativecarrierfeature",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsemnativecarrierfeature.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libsensorlistener",
 	owner: "samsung",
 	strip: {
@@ -1337,6 +1357,23 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libskeymaster4device.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libstork_shared",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libstork_shared.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -1448,6 +1485,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libvkservice",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libvkservice.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libvpl",
 	owner: "samsung",
 	strip: {
@@ -1550,14 +1604,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.radio.bridge@2.0",
+	name: "vendor.samsung.hardware.radio-V1-ndk",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so"],
+			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -1567,14 +1621,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.radio.channel@2.0",
+	name: "vendor.samsung.hardware.radio.bridge-V1-ndk",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so"],
+			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -1584,14 +1638,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.radio@2.0",
+	name: "vendor.samsung.hardware.radio.channel-V1-ndk",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.0.so"],
+			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -1601,14 +1655,48 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.radio@2.1",
+	name: "vendor.samsung.hardware.radio.data-V1-ndk",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio@2.1.so"],
+			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.samsung.hardware.radio.messaging-V1-ndk",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.samsung.hardware.radio.sim-V1-ndk",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -1705,6 +1793,41 @@ prebuilt_etc_xml {
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.samsung.hardware.radio.exclude.slsi",
+	owner: "samsung",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.slsi.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.samsung.hardware.radio_manifest_2_33",
+	owner: "samsung",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_33.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.samsung.hardware.sehradio_manifest_2_33",
+	owner: "samsung",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "cass",
+	owner: "samsung",
+	src: "proprietary/vendor/bin/cass",
+	filename: "cass",
 	soc_specific: true,
 }
 
@@ -1810,6 +1933,14 @@ sh_binary {
 	owner: "samsung",
 	src: "proprietary/vendor/bin/tzts_daemon",
 	filename: "tzts_daemon",
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "vaultkeeperd",
+	owner: "samsung",
+	src: "proprietary/vendor/bin/vaultkeeperd",
+	filename: "vaultkeeperd",
 	soc_specific: true,
 }
 

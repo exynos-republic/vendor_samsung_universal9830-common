@@ -115,6 +115,7 @@ PRODUCT_PACKAGES += \
     lib_soundaliveresampler \
     libsecnativefeature \
     libsecril-client.exynos990 \
+    libsemnativecarrierfeature \
     libprofileparamstorage \
     libsecaudiocoreutils \
     libspatializerparamstorage \
@@ -126,6 +127,8 @@ PRODUCT_PACKAGES += \
     gps.default \
     vendor.samsung.hardware.gnss@2.1-impl \
     libSEF.quram \
+    libSemDataProps \
+    libSemTelephonyProps \
     libbauthserver \
     libbauthtzcommon \
     libbayergdccore \
@@ -177,30 +180,32 @@ PRODUCT_PACKAGES += \
     libnpuc_graph \
     libnpuc_template \
     libqfp_sensortest \
-    libril-samsung \
+    libril_sem \
     libsait_npu_compiler \
-    libsec-ril-dsds \
     libsec-ril \
     libsec_semRil \
-    libsemnativecarrierfeature \
     libsensorlistener \
     libskeymaster4device \
+    libstork_shared \
     libsynaFpSensorTestNwd \
     libteecl \
     libuniapi \
     libuniplugin \
     libuuid \
     libvkmanager_vendor \
+    libvkservice \
     libvpl \
     sensors.flicker \
     sensors.grip \
     sensors.sensorhub \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.gnss@2.1 \
-    vendor.samsung.hardware.radio.bridge@2.0 \
-    vendor.samsung.hardware.radio.channel@2.0 \
-    vendor.samsung.hardware.radio@2.0 \
-    vendor.samsung.hardware.radio@2.1 \
+    vendor.samsung.hardware.radio-V1-ndk \
+    vendor.samsung.hardware.radio.bridge-V1-ndk \
+    vendor.samsung.hardware.radio.channel-V1-ndk \
+    vendor.samsung.hardware.radio.data-V1-ndk \
+    vendor.samsung.hardware.radio.messaging-V1-ndk \
+    vendor.samsung.hardware.radio.sim-V1-ndk \
     vendor.samsung.hardware.thermal@1.0 \
     vendor.samsung_slsi.hardware.eden_runtime@1.0-impl \
     vendor.samsung_slsi.hardware.eden_runtime@1.0 \
@@ -208,6 +213,10 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleEx3CORTEXM4 \
     com.android.hotwordenrollment.common.util \
     manifest_android.hardware.drm@1.3-service.widevine \
+    vendor.samsung.hardware.radio.exclude.slsi \
+    vendor.samsung.hardware.radio_manifest_2_33 \
+    vendor.samsung.hardware.sehradio_manifest_2_33 \
+    cass \
     cbd \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.keymaster@4.0_strongbox-service \
@@ -219,4 +228,5 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.gnss@2.1-service \
     vendor.samsung_slsi.hardware.eden_runtime@1.0-service \
     tzdaemon \
-    tzts_daemon
+    tzts_daemon \
+    vaultkeeperd
