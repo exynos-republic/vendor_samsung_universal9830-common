@@ -1760,7 +1760,7 @@ android_app_import {
 	name: "HotwordEnrollmentOKGoogleEx3CORTEXM4",
 	owner: "samsung",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleEx3CORTEXM4/HotwordEnrollmentOKGoogleEx3CORTEXM4.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -1772,7 +1772,7 @@ android_app_import {
 	name: "HotwordEnrollmentXGoogleEx3CORTEXM4",
 	owner: "samsung",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleEx3CORTEXM4/HotwordEnrollmentXGoogleEx3CORTEXM4.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
