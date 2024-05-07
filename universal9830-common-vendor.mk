@@ -99,6 +99,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-564c544b5052:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-564c544b5052 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-64756c444152:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-64756c444152 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-656e676d6f64:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-656e676d6f64 \
+    vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-657365636f6d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-657365636f6d \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/00000000-0000-0000-0000-6d73745f5441:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-6d73745f5441 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/driver/00000000-0000-0000-0000-494363447256:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-494363447256 \
     vendor/samsung/universal9830-common/proprietary/vendor/tee/driver/00000000-0000-0000-0000-4d53546d7374:$(TARGET_COPY_OUT_VENDOR)/tee/driver/00000000-0000-0000-0000-4d53546d7374 \
